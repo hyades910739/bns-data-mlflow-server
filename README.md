@@ -1,4 +1,6 @@
 # Mlflow Server with Basic Http Authentication  
+![structure](https://bitbucket.org/ebuyglobal/bns-data-mlflow-server/raw/4be28f1d864367a209d66d7273c1a89b7cc75b03/imgs/structure.png)  
+(source: mlflow docs)   
 
 A docker-compose file to build a mlflow server with following setting:   
 
