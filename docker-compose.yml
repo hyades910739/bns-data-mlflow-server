@@ -1,0 +1,19 @@
+version: '3'
+services:
+  mlflow:
+    env_file: config.env
+    build: "./mlflow-easyauth"
+    ports:
+     - "8899:6000"
+    volumes:
+     - ./data/mlflow:/mlruns
+    depends_on:
+       - "db"     
+  db:
+    env_file: config.env
+    build: ./db
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data/db:/var/lib/mysql
+      
